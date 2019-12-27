@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lina Lindberg Hägg          </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+
+  </head>
+  <body>
+
+
+
+         <div class="container">
+
+    <header>
+      <h2>LINA LINDBERG HÄGG</h2>
+    </header>
+ <div class="content">
+  <h1>GRAPHIC DESIGNER</h1>
+ </div>
+
+  <footer>
+ <div class="footer">
+
+
+  <div class="contact">
+  <ul>
+    <li class="active"><a href="#About" onclick="window.location.reload(true);">HOME</a>
+    <li class="om"><a href="#About">About</a></li>
+    <li class="Projects"><a href="#Projects">Projects</a></li>
+    <li class="kontakt"><a href="#Contact">Contact</a></li>
+  </ul>
+ </div>
+
+  </footer>
+  </div>
+ </div>
+
+  </body>
+
+  <script> 
+    $(document).ready(function() { 
+        $('li.om').click(function() { 
+          $("div.content").removeClass("about", "works");
+          $("div.content").addClass("about");
+            $("div.content").html( 
+              "<img src='imgs/0.jpeg'><p><span style='font-family:Lato, sans-serif; font-size:16px; color: black;'>Hej! Jag heter Lina Lindberg Hägg och jag studerar just nu på Berghs School of Communication Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"); 
+        })
+
+        
+
+
+    })
+
+    $(document).ready(function() { 
+        $('li.kontakt').click(function() { 
+          $("div.content").removeClass("about", "works");
+            $("div.content").html( 
+              "<a href='mailto:linahaegg@gmail.com'><i class='fa fa-envelope'></a></i><a href='https://www.linkedin.com/in/lina-h%C3%A4gg-492047192/'><i class='fa fa-linkedin'></i></a><a href='http://www.instagram.com/linahaegg'><i class='fa fa-instagram'></i></a>"); 
+        })
+
+
+    }) 
+
+    $(document).ready(function() { 
+        $('li.Projects').click(function() { 
+          $("div.content").removeClass("about");
+          $("div.content").addClass("works");
+            $("div.content").html( 
+              "<ul> <li class='fisk'><a href='imgs/Gold-Foil-Business-Card-Mockup.jpg' data-lightbox='mygallery' data-title='Poster of Nordic fishes'>Nordic Fish Poster</a></li><li class='3d'><a href='imgs/Hemsida0001.png' data-lightbox='mygallery' data-title='Picture of 3D Animation Project'>3D animation project</a></li><li class='horse'><a href='imgs/Black+and+white+frame+mockup.jpg'  data-lightbox='mygallery' data-title='Logo Design for Horseequipment retailstore'>Esqueterian logo design</a></li><li class='berghs'><a href='#berghs'>Berghs School of Education admission test</a></li></ul>");
+
+    }) 
+
+  })
+
+
+    $(document).on('click', 'ul li', function(){ 
+        $(this).addClass('active').siblings().removeClass('active')
+    })
+
+</script> 
+</html>

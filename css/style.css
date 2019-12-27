@@ -1,0 +1,170 @@
+body {
+  background-image: linear-gradient(to bottom right, lightblue, pink);
+}
+
+header {
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.container {
+  height: 100vh;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Monoton", cursive;
+  font-size: 40px;
+  height: 65vh;
+  line-height: 50%;
+}
+
+.content img {
+  border-radius: 50%;
+  width: 150px;
+  animation: fadein 3s;
+  border: 5px solid rgba(0, 0, 0, 0.164);
+  margin-top: 50px;
+  flex-direction: column;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.content p {
+  animation: fadein 3s;
+  max-width: 35%;
+  flex-direction: column;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.164);
+}
+
+.content i.fa-envelope {
+  animation: fadein 1s;
+}
+
+.content i.fa-linkedin {
+  animation: fadein 3s;
+}
+
+.content i.fa-instagram {
+  animation: fadein 4s;
+}
+
+.container h1 {
+  animation: fadein 3s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.content i {
+  margin: 10px 43px;
+  transition: all 0.2s ease-in-out;
+}
+
+.container a {
+  text-decoration: none;
+  color: black;
+}
+
+.container i:hover {
+  color: white;
+
+  font-size: 50px;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  list-style-type: none;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul li.active a {
+  color: white;
+  text-decoration: underline;
+  background: rgba(0, 0, 0, 0.164);
+}
+
+li a {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  transition: all 200ms;
+  padding: 10px 10px;
+}
+
+li a:hover {
+  color: white;
+  text-decoration: underline;
+  background: rgba(0, 0, 0, 0.164);
+}
+
+.content .works {
+  display: inline-block;
+  overflow: auto;
+  margin-top: 20px;
+  animation: fadein 3s;
+}
+
+.content .works ul {
+  display: flex;
+  animation: fadein 3s;
+  text-align: left;
+}
+
+.content.works li {
+  margin: 10px 10px;
+  margin: 0px, auto;
+  animation: fadein 3s;
+  line-height: 100%;
+  font-size: 18px;
+  text-align: left;
+}
+
+.content.works li a:hover {
+  background: rgba(255, 255, 255, 0.164);
+}
+
+.contact {
+  margin-top: 20px;
+  display: inline-block;
+  overflow: auto;
+}
+
+.contact ul {
+  display: flex;
+  justify-content: center;
+}
+
+/* li.3d:hover
+
+ {background-color:yellow;
+ font-size: 20;}*/
