@@ -24,10 +24,10 @@ header {
 }
 
 .content img {
-  border-radius: 50%;
-  width: 150px;
-  animation: fadein 3s;
   border: 5px solid rgba(0, 0, 0, 0.164);
+  border-radius: 50%;
+  max-width: 200px;
+  animation: fadein 3s;
   margin-top: 50px;
   flex-direction: column;
 }
@@ -42,7 +42,6 @@ header {
   max-width: 35%;
   flex-direction: column;
   border-radius: 5px;
-  background: rgba(0, 0, 0, 0.164);
 }
 
 .content i.fa-envelope {
@@ -99,6 +98,8 @@ h2 {
   align-items: center;
   width: 100%;
   overflow: none;
+  position: fixed;
+  bottom: 0;
 }
 
 ul li {
