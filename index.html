@@ -12,34 +12,37 @@
 
   </head>
   <body>
+   
 
+          <header>
+            <h2>JIMMY SKINNARI</h2>
+          </header>
+          <div class="container">     
+             
+            <div class="wrapper">
+              <div class="content">
+                <h1>JIMMY SKINNARI</h1>
+              </div>
+           </div>
 
+        <footer>
+        <div class="footer">
 
-         <div class="container">
+          <div class="blurr">
+          </div>
+        <div class="contact">
+        <ul>
+          <li class="active"><a href="#About" onclick="window.location.reload(true);">HOME</a>
+          <li class="om"><a href="#About">About Me</a></li>
+          <li class="Projects"><a href="#Projects">Projects</a></li>
+          <li class="kontakt"><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+  
 
-    <header>
-      <h2>JIMMY SKINNARI</h2>
-    </header>
- <div class="content">
-  <h1>JIMMY SKINNARI</h1>
- </div>
-
-  <footer>
- <div class="footer">
-
-
-  <div class="contact">
-  <ul>
-    <li class="active"><a href="#About" onclick="window.location.reload(true);">HOME</a>
-    <li class="om"><a href="#About">About Me</a></li>
-    <li class="Projects"><a href="#Projects">Projects</a></li>
-    <li class="kontakt"><a href="#Contact">Contact</a></li>
-  </ul>
- </div>
-
-  </footer>
-  </div>
- </div>
+        </footer>
+      </div>
+    </divclass>
 
   </body>
 
@@ -49,39 +52,27 @@
           $("div.content").removeClass("about", "works");
           $("div.content").addClass("about");
             $("div.content").html(
-              "<img src='imgs/jimmy.png'><p><span style='font-family:Lato, sans-serif; font-size:16px; color: black;'>Hej! Jag heter Jimmy Skinnari och jag ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum");
+              "<img src='imgs/jimmy.png'><p><span style='font-family:Lato, sans-serif; font-size:16px; color:  rgba(255, 255, 255, 0.678);'>Hej! Jag heter Jimmy Skinnari och jag ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>");
         })
-
-
-
-
     })
-
     $(document).ready(function() {
         $('li.kontakt').click(function() {
           $("div.content").removeClass("about", "works");
             $("div.content").html(
-              "<a href='mailto:jimmyskinnari@gmail.com'><i class='fa fa-envelope'></a></i><a href='https://www.linkedin.com/in/jimmy-skinnari-b5058216b'><i class='fa fa-linkedin'></i></a><a href='http://www.instagram.com/jimmyskinnari'><i class='fa fa-instagram'></i></a>");
+              "<a href='mailto:jimmyskinnari@gmail.com'><i class='fa fa-envelope'></a></i><a href='https://www.linkedin.com/in/jimmy-skinnari-b5058216b'><i class='fa fa-linkedin'></i></a><a href='http://www.instagram.com/jimmyskinnari'><i class='fa fa-instagram'></i></a><a href='http://www.github.com/grevas'><i class='fa fa-github'></i></a>");
         })
-
-
     })
-
     $(document).ready(function() {
         $('li.Projects').click(function() {
           $("div.content").removeClass("about");
           $("div.content").addClass("works");
             $("div.content").html(
-              "<ul> <li class='fisk'><a href='imgs/Gold-Foil-Business-Card-Mockup.jpg' data-lightbox='mygallery' data-title='Poster of Nordic fishes'>Nordic Fish Poster</a></li><li class='3d'><a href='imgs/Hemsida0001.png' data-lightbox='mygallery' data-title='Picture of 3D Animation Project'>3D animation project</a></li><li class='horse'><a href='imgs/Black+and+white+frame+mockup.jpg'  data-lightbox='mygallery' data-title='Logo Design for Horseequipment retailstore'>Esqueterian logo design</a></li><li class='berghs'><a href='#berghs'>Berghs School of Education admission test</a></li></ul>");
-
+              "<ul> <li class='fisk'><a href='imgs/Gold-Foil-Business-Card-Mockup.jpg' data-lightbox='mygallery' data-title='Poster of Nordic fishes'>Test</a></li><li class='3d'><a href='imgs/Hemsida0001.png' data-lightbox='mygallery' data-title='Picture of 3D Animation Project'>Test</a></li><li class='horse'><a href='imgs/Black+and+white+frame+mockup.jpg'  data-lightbox='mygallery' data-title='Logo Design for Horseequipment retailstore'>Test</a></li><li class='berghs'><a href='#berghs'>Test</a></li></ul>");
     })
-
   })
-
-
     $(document).on('click', 'ul li', function(){
         $(this).addClass('active').siblings().removeClass('active')
     })
-
 </script>
 </html>
+

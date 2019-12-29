@@ -1,34 +1,45 @@
 body {
-  background-image: linear-gradient(to bottom right, lightblue, pink);
+  background-image: linear-gradient(to bottom right, #032e3e, #19646a);
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 header {
-  color: black;
   font-family: "Lato", sans-serif;
   font-weight: bold;
   font-size: 10px;
 }
 
-.container {
-  height: 100vh;
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 70vh;
 }
+
 .content {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
-  font-family: "Monoton", cursive;
-  font-size: 40px;
-  height: 65vh;
+  font-family: "Lato", sans-serif;
+  color: rgba(255, 255, 255, 0.678);
+  font-size: 35px;
   line-height: 50%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.content h1 {
+  letter-spacing: 10px;
 }
 
 .content img {
-  border: 5px solid rgba(0, 0, 0, 0.164);
+  border: 5px solid rgba(255, 255, 255, 0.253);
   border-radius: 50%;
   max-width: 200px;
   animation: fadein 3s;
-  margin-top: 50px;
+  margin-top: 75px;
   flex-direction: column;
 }
 
@@ -39,9 +50,7 @@ header {
 
 .content p {
   animation: fadein 3s;
-  max-width: 35%;
-  flex-direction: column;
-  border-radius: 5px;
+  max-width: 50%;
 }
 
 .content i.fa-envelope {
@@ -49,15 +58,21 @@ header {
 }
 
 .content i.fa-linkedin {
-  animation: fadein 3s;
+  animation: fadein 6s;
 }
 
 .content i.fa-instagram {
   animation: fadein 4s;
 }
 
-.container h1 {
+.content i.fa-github {
   animation: fadein 3s;
+}
+
+.content h1 {
+  position: relative;
+  animation: fadein 3s;
+  transition: all 0.2s ease-in-out;
 }
 
 @keyframes fadein {
@@ -80,26 +95,27 @@ header {
 }
 
 .container i:hover {
-  color: white;
-
+  color: rgba(255, 255, 255, 0.678);
   font-size: 50px;
 }
 
 h2 {
   font-weight: bold;
+  color: rgba(255, 255, 255, 0.678);
+  letter-spacing: 2px;
 }
 
 .footer {
+  display: flex;
   text-align: center;
   list-style-type: none;
-  width: 70%;
-  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  overflow: none;
   position: fixed;
   bottom: 0;
+  width: 100%;
+  overflow: scroll;
 }
 
 ul li {
@@ -107,9 +123,7 @@ ul li {
 }
 
 ul li.active a {
-  color: white;
-  text-decoration: underline;
-  background: rgba(0, 0, 0, 0.164);
+  color: rgba(255, 255, 255, 0.678);
 }
 
 li a {
@@ -119,25 +133,10 @@ li a {
   text-decoration: none;
   color: black;
   transition: all 200ms;
-  padding: 10px 10px;
-}
-
-li a:hover {
-  color: white;
-  text-decoration: underline;
-  background: rgba(0, 0, 0, 0.164);
-}
-
-.content .works {
-  display: inline-block;
-  overflow: auto;
-  margin-top: 20px;
-  animation: fadein 3s;
 }
 
 .content .works ul {
   display: flex;
-  animation: fadein 3s;
   text-align: left;
 }
 
@@ -155,17 +154,80 @@ li a:hover {
 }
 
 .contact {
-  margin-top: 20px;
-  display: inline-block;
-  overflow: auto;
+  flex-direction: row;
+
+  z-index: 9999;
+}
+
+.blurr {
 }
 
 .contact ul {
+  padding-left: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.contact li a {
+  padding: 10px 10px;
+}
+
+@media (max-width: 754px) {
+  .footer {
+    width: 100%;
+  }
+
+  .content h1 {
+    line-height: 150%;
+    letter-spacing: 20px;
+    transform: scale(0.6);
+    transition: transform 1s;
+  }
+
+  .content p {
+    animation: fadein 3s;
+    max-width: 90%;
+  }
+}
+
+.footer ul li a,
+.footer ul li a:after,
+.footer ul li a:before {
+  transition: all 0.5s;
+}
+.footer ul li a:hover {
+  color: rgba(255, 255, 255, 0.678);
+}
+
+/* stroke */
+.footer ul li a {
+  position: relative;
+}
+
+.footer ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: rgba(255, 255, 255, 0.678);
+  height: 3px;
+}
+.footer ul li a:hover:after {
+  width: 80%;
 }
 
 /* li.3d:hover
 
  {background-color:yellow;
- font-size: 20;}*/
+ font-size: 20;}
+ 
+ <ul> <li class='fisk'><a href='imgs/Gold-Foil-Business-Card-Mockup.jpg' data-lightbox='mygallery' data-title='Poster of Nordic fishes'>Nordic Fish Poster</a></li><li class='3d'><a href='imgs/Hemsida0001.png' data-lightbox='mygallery' data-title='Picture of 3D Animation Project'>3D animation project</a></li><li class='horse'><a href='imgs/Black+and+white+frame+mockup.jpg'  data-lightbox='mygallery' data-title='Logo Design for Horseequipment retailstore'>Esqueterian logo design</a></li><li class='berghs'><a href='#berghs'>Berghs School of Education admission test</a></li></ul>
+ 
+ 
+ 
+ */
