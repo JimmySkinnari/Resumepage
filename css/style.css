@@ -135,19 +135,20 @@ li a {
   transition: all 200ms;
 }
 
-.content .works ul {
+.content.works ul {
   display: flex;
+  flex-direction: column;
   text-align: left;
   padding: 0;
 }
 
 .content.works li {
   margin: 10px 10px;
-  margin: 0px, auto;
+  justify-content: center;
   animation: fadein 3s;
   line-height: 100%;
   font-size: 18px;
-  text-align: left;
+  text-align: center;
 }
 
 .content.works li a:hover {
