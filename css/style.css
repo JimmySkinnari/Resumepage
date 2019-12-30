@@ -138,6 +138,7 @@ li a {
 .content .works ul {
   display: flex;
   text-align: left;
+  padding: 0;
 }
 
 .content.works li {
