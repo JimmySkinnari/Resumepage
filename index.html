@@ -1,79 +1,107 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jimmy Skinnari</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/lightbox.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
 
-  </head>
-  <body>
-   
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jimmy Skinnari</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/lightbox.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
 
-          <header>
-            <h2>JIMMY SKINNARI</h2>
-          </header>
-          <div class="container">     
-             
-            <div class="wrapper">
-              <div class="content">
-                <h1>JIMMY SKINNARI</h1>
-              </div>
-           </div>
+</head>
 
-        <footer>
-        <div class="footer">
+<body>
 
-          <div class="blurr">
-          </div>
+  <header>
+    <h2>JIMMY SKINNARI</h2>
+  </header>
+  <div class="container">
+
+    <div class="wrapper">
+      <div class="content">
+        <h1>JIMMY SKINNARI</h1>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+
+        <div class="blurr">
+
+
+        </div>
         <div class="contact">
-        <ul>
-          <li class="active"><a href="#About" onclick="window.location.reload(true);">HOME</a>
-          <li class="om"><a href="#About">About Me</a></li>
-          <li class="Projects"><a href="#Projects">Projects</a></li>
-          <li class="kontakt"><a href="#Contact">Contact</a></li>
-        </ul>
-      </div>
-  
+          <ul>
+            <li class="active"><a href="#About" onclick="window.location.reload(true);">HOME</a>
+            <li class="om"><a href="#About">About Me</a></li>
+            <li class="projects"><a href="#Projects">Projects</a></li>
+            <li class="kontakt"><a href="#Contact">Contact</a></li>
+          </ul>
+        </div>
 
-        </footer>
-      </div>
-    </divclass>
 
-  </body>
+    </footer>
+  </div>
+  </divclass>
 
-  <script>
-    $(document).ready(function() {
-        $('li.om').click(function() {
-          $("div.content").removeClass("about", "works");
-          $("div.content").addClass("about");
-            $("div.content").html(
-              "<img src='imgs/jimmy.png'><p><span style='font-family:Lato, sans-serif; font-size:16px; color:  rgba(255, 255, 255, 0.678);'>Hej! Jag heter Jimmy Skinnari och jag ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>");
-        })
-    })
-    $(document).ready(function() {
-        $('li.kontakt').click(function() {
-          $("div.content").removeClass("about", "works");
-            $("div.content").html(
-              "<a href='mailto:jimmyskinnari@gmail.com'><i class='fa fa-envelope'></a></i><a href='https://www.linkedin.com/in/jimmy-skinnari-b5058216b' target='_blank'><i class='fa fa-linkedin'></i></a><a href='http://www.instagram.com/jimmyskinnari' target='_blank'><i class='fa fa-instagram'></i></a><a href='http://www.github.com/grevas' target='_blank'><i class='fa fa-github'></i></a>");
-        })
-    })
-    $(document).ready(function() {
-        $('li.Projects').click(function() {
-          $("div.content").removeClass("about");
-          $("div.content").addClass("works");
-            $("div.content").html(
-              "<ul> <li class='fisk'><a href='imgs/Gold-Foil-Business-Card-Mockup.jpg' data-lightbox='mygallery' data-title='Poster of Nordic fishes'>Test</a></li><li class='3d'><a href='imgs/Hemsida0001.png' data-lightbox='mygallery' data-title='Picture of 3D Animation Project'>Test</a></li><li class='horse'><a href='imgs/Black+and+white+frame+mockup.jpg'  data-lightbox='mygallery' data-title='Logo Design for Horseequipment retailstore'>Test</a></li><li class='berghs'><a href='#berghs'>Test</a></li></ul>");
+</body>
+
+<script>
+  $(document).ready(function () {
+    $('li.om').click(function () {
+      $("div.content").removeClass('about');
+      $("div.content").removeClass('snake');
+      $("div.content").removeClass('works');
+      $("div.content").addClass('about');
+      $("div.content").html(
+        "<img src='imgs/jimmy.png'><p><span style='font-family:Lato, sans-serif; font-size:16px; color:  rgba(255, 255, 255, 0.678);'>Hej! Jag heter Jimmy Skinnari och jag ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>"
+      );
     })
   })
-    $(document).on('click', 'ul li', function(){
-        $(this).addClass('active').siblings().removeClass('active')
+  $(document).ready(function () {
+    $('li.kontakt').click(function () {
+      $("div.content").removeClass('about');
+      $("div.content").removeClass('snake');
+      $("div.content").removeClass('works');
+      $("div.content").html(
+        "<a href='mailto:jimmyskinnari@gmail.com'><i class='fa fa-envelope'></a></i><a href='https://www.linkedin.com/in/jimmy-skinnari-b5058216b' target='_blank'><i class='fa fa-linkedin'></i></a><a href='http://www.instagram.com/jimmyskinnari' target='_blank'><i class='fa fa-instagram'></i></a><a href='http://www.github.com/grevas' target='_blank'><i class='fa fa-github'></i></a>"
+      );
     })
+  })
+  $(document).ready(function () {
+    $('li.projects').click(function () {
+      $("div.content").removeClass('about');
+      $("div.content").removeClass('snake');
+      $("div.content").removeClass('works');
+      $("div.content").addClass("works");
+      $("div.content").html(
+        "<ul><li class='snake'><a href ='#Snake'>SNAKE GAME IN P5.js</a></li></ul>"
+      );
+    })
+  })
+  $(document).on('click', 'li.snake', function () {
+      $("div.content").removeClass('about');
+      $("div.content").removeClass('snake');
+      $("div.content").removeClass('works');
+      $("div.content").addClass("snake");
+      $("div.content").html(
+        "<iframe src='https://editor.p5js.org/kennypowers1337/embed/-gpWmX6Zk'></iframe><p> Use the arrows to steer the snake</p>"         
+      );
+    
+  })
+  $(document).on('click', 'ul li', function () {
+    $(this).addClass('active').siblings().removeClass('active')
+  })
 </script>
+
 </html>
+
+
+
+
+
 

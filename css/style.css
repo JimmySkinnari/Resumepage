@@ -1,3 +1,7 @@
+html {
+  overflow: hidden;
+}
+
 body {
   background-image: linear-gradient(to bottom right, #032e3e, #19646a);
   background-repeat: no-repeat;
@@ -79,6 +83,7 @@ header {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -135,11 +140,35 @@ li a {
   transition: all 200ms;
 }
 
+.content.snake {
+
+  display: block;
+  text-align: center;
+  align-items: center;
+
+}
+.content.snake iframe {
+  width: 400px;
+  height: 400px;
+  
+}
+
+.content.snake p {
+  
+  font-size: 20px;
+  margin: 10px auto;
+  text-align: center;
+ 
+  
+  
+}
+
 .content.works ul {
   display: flex;
   flex-direction: column;
   text-align: left;
   padding: 0;
+  text-transform: none;
 }
 
 .content.works li {
@@ -152,17 +181,20 @@ li a {
 }
 
 .content.works li a:hover {
-  background: rgba(255, 255, 255, 0.164);
+  color: rgba(255, 255, 255, 0.685);
 }
 
+.content.works iframe{
+
+  height: 100%;
+  width: 100%;
+}
 .contact {
   flex-direction: row;
-
-  z-index: 9999;
+  overflow: hidden;
+ 
 }
 
-.blurr {
-}
 
 .contact ul {
   padding-left: 0;
@@ -198,6 +230,7 @@ li a {
 .footer ul li a:before {
   transition: all 0.5s;
 }
+
 .footer ul li a:hover {
   color: rgba(255, 255, 255, 0.678);
 }
@@ -219,17 +252,8 @@ li a {
   background: rgba(255, 255, 255, 0.678);
   height: 3px;
 }
+
 .footer ul li a:hover:after {
   width: 80%;
 }
 
-/* li.3d:hover
-
- {background-color:yellow;
- font-size: 20;}
- 
- <ul> <li class='fisk'><a href='imgs/Gold-Foil-Business-Card-Mockup.jpg' data-lightbox='mygallery' data-title='Poster of Nordic fishes'>Nordic Fish Poster</a></li><li class='3d'><a href='imgs/Hemsida0001.png' data-lightbox='mygallery' data-title='Picture of 3D Animation Project'>3D animation project</a></li><li class='horse'><a href='imgs/Black+and+white+frame+mockup.jpg'  data-lightbox='mygallery' data-title='Logo Design for Horseequipment retailstore'>Esqueterian logo design</a></li><li class='berghs'><a href='#berghs'>Berghs School of Education admission test</a></li></ul>
- 
- 
- 
- */
