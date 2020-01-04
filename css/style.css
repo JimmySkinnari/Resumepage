@@ -150,17 +150,12 @@ li a {
 .content.snake iframe {
   width: 400px;
   height: 400px;
-  
 }
 
-.content.snake p {
-  
+.content.snake p { 
   font-size: 20px;
   margin: 10px auto;
-  text-align: center;
- 
-  
-  
+   
 }
 
 .content.works ul {
