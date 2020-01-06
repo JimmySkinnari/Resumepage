@@ -42,7 +42,7 @@ header {
   border: 5px solid rgba(255, 255, 255, 0.253);
   border-radius: 50%;
   max-width: 200px;
-  animation: fadein 3s;
+  animation: growFromZero 1s;
   margin-top: 75px;
   flex-direction: column;
 }
@@ -53,7 +53,7 @@ header {
 }
 
 .content p {
-  animation: fadein 3s;
+  animation: slideInFromBottom 1s;
   max-width: 50%;
 }
 
@@ -90,6 +90,24 @@ header {
 
   to {
     opacity: 1;
+  }
+}
+
+@keyframes growFromZero {
+  0% {
+    transform: scale(0.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
