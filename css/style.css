@@ -57,12 +57,16 @@ header {
   max-width: 50%;
 }
 
+.content a {
+  overflow: hidden;
+}
+
 .content i.fa-envelope {
   animation: fadein 1s;
 }
 
 .content i.fa-linkedin {
-  animation: fadein 6s;
+  animation: fadein 5s;
 }
 
 .content i.fa-instagram {
@@ -90,8 +94,30 @@ header {
 }
 
 .content i {
-  margin: 10px 43px;
   transition: all 0.2s ease-in-out;
+}
+
+.content.links {
+  width: 35%;
+  position: absolute;
+}
+
+.links {
+  position: absolute;
+}
+
+.link {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.link:hover {
+  overflow: hidden;
+  position: relative;
 }
 
 .container a {
@@ -101,7 +127,7 @@ header {
 
 .container i:hover {
   color: rgba(255, 255, 255, 0.678);
-  font-size: 50px;
+  font-size: 45px;
 }
 
 h2 {
@@ -120,7 +146,6 @@ h2 {
   position: fixed;
   bottom: 0;
   width: 100%;
-  overflow: scroll;
 }
 
 ul li {
@@ -141,21 +166,19 @@ li a {
 }
 
 .content.snake {
-
-  display: block;
   text-align: center;
   align-items: center;
-
+  display: block;
 }
+
 .content.snake iframe {
-  width: 400px;
   height: 400px;
+  width: 400px;
 }
 
-.content.snake p { 
+.content.snake p {
   font-size: 20px;
   margin: 10px auto;
-   
 }
 
 .content.works ul {
@@ -179,17 +202,9 @@ li a {
   color: rgba(255, 255, 255, 0.685);
 }
 
-.content.works iframe{
-
-  height: 100%;
-  width: 100%;
-}
 .contact {
   flex-direction: row;
-  overflow: hidden;
- 
 }
-
 
 .contact ul {
   padding-left: 0;
@@ -217,6 +232,10 @@ li a {
   .content p {
     animation: fadein 3s;
     max-width: 90%;
+  }
+
+  .content.links {
+    width: 80%;
   }
 }
 
@@ -251,4 +270,3 @@ li a {
 .footer ul li a:hover:after {
   width: 80%;
 }
-

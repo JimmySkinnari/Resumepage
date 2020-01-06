@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
 
+
 </head>
 
 <body>
@@ -19,7 +20,7 @@
   <header>
     <h2>JIMMY SKINNARI</h2>
   </header>
-  <div class="container">
+      <div class="container">
 
     <div class="wrapper">
       <div class="content">
@@ -43,8 +44,7 @@
 
     </footer>
   </div>
-  </divclass>
-
+  </div>
 </body>
 
 <script>
@@ -66,6 +66,7 @@ $(document).ready(function () {
       $("div.content").removeClass('snake');
       $("div.content").removeClass('works');
       $("div.content").removeClass('home');
+      $("div.content").removeClass("links");
       $("div.content").addClass('about');
       $("div.content").html(
         "<img src='imgs/jimmy.png'><p><span style='font-family:Lato, sans-serif; font-size:16px; color:  rgba(255, 255, 255, 0.678);'>Hej! Jag heter Jimmy Skinnari och jag ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>"
@@ -77,8 +78,10 @@ $(document).ready(function () {
       $("div.content").removeClass('about');
       $("div.content").removeClass('snake');
       $("div.content").removeClass('works');
+      $("div.content").removeClass('hem');
+      $("div.content").addClass("links");
       $("div.content").html(
-        "<a href='mailto:jimmyskinnari@gmail.com'><i class='fa fa-envelope'></a></i><a href='https://www.linkedin.com/in/jimmy-skinnari-b5058216b' target='_blank'><i class='fa fa-linkedin'></i></a><a href='http://www.instagram.com/jimmyskinnari' target='_blank'><i class='fa fa-instagram'></i></a><a href='http://www.github.com/grevas' target='_blank'><i class='fa fa-github'></i></a>"
+        "<div class='link'><a href='mailto:jimmyskinnari@gmail.com'><i class='fa fa-envelope'></a></i></div><div class='link'><a href='https://www.linkedin.com/in/jimmy-skinnari-b5058216b' target='_blank'><i class='fa fa-linkedin'></i></a></div><div class='link'><a href='http://www.instagram.com/jimmyskinnari' target='_blank'><i class='fa fa-instagram'></i></a></div><div class='link'><a href='http://www.github.com/grevas' target='_blank'><i class='fa fa-github'></i></a></div>"
       );
     })
   })
@@ -87,6 +90,8 @@ $(document).ready(function () {
       $("div.content").removeClass('about');
       $("div.content").removeClass('snake');
       $("div.content").removeClass('works');
+      $("div.content").removeClass('links');
+      $("div.content").removeClass('hem');
       $("div.content").addClass("works");
       $("div.content").html(
         "<ul><li class='snake'><a href ='#Snake'>SNAKE GAME IN P5.js</a></li></ul>"
@@ -97,8 +102,11 @@ $(document).ready(function () {
       $("div.content").removeClass('about');
       $("div.content").removeClass('snake');
       $("div.content").removeClass('works');
+      $("div.content").removeClass('links');
+      $("div.content").removeClass('hem');
       $("div.content").addClass("snake");
       $("div.content").html(
+      
         "<iframe src='https://editor.p5js.org/kennypowers1337/embed/-gpWmX6Zk'></iframe><p> Use the arrows on your keyboard to steer the snake</p>"         
       );
     
