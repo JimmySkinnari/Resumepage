@@ -30,13 +30,10 @@
     <footer>
       <div class="footer">
 
-        <div class="blurr">
 
-
-        </div>
         <div class="contact">
           <ul>
-            <li class="hem"><a href="#Home">HOME</a>
+            <li class="active"><a href="#Home" onclick="window.location.reload(true);">HOME</a>
             <li class="om"><a href="#About">About Me</a></li>
             <li class="projects"><a href="#Projects">Projects</a></li>
             <li class="kontakt"><a href="#Contact">Contact</a></li>
@@ -57,6 +54,7 @@ $(document).ready(function () {
       $("div.content").removeClass('about');
       $("div.content").removeClass('snake');
       $("div.content").removeClass('works');
+      $("div.content").addClass('home');
       $("div.content").html(
         "<h1>JIMMY SKINNARI</h1>"
       );
@@ -67,6 +65,7 @@ $(document).ready(function () {
       $("div.content").removeClass('about');
       $("div.content").removeClass('snake');
       $("div.content").removeClass('works');
+      $("div.content").removeClass('home');
       $("div.content").addClass('about');
       $("div.content").html(
         "<img src='imgs/jimmy.png'><p><span style='font-family:Lato, sans-serif; font-size:16px; color:  rgba(255, 255, 255, 0.678);'>Hej! Jag heter Jimmy Skinnari och jag ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>"
@@ -90,7 +89,7 @@ $(document).ready(function () {
       $("div.content").removeClass('works');
       $("div.content").addClass("works");
       $("div.content").html(
-        "<ul><li class='snake'><a href ='Snake'>SNAKE GAME IN P5.js</a></li></ul>"
+        "<ul><li class='snake'><a href ='#Snake'>SNAKE GAME IN P5.js</a></li></ul>"
       );
     })
   })
