@@ -193,6 +193,10 @@ li a {
   height: 400px;
   width: 400px;
 }
+.content.snakeMobile iframe {
+  height: 600px;
+  width: 400px;
+}
 
 .content.snake p {
   font-size: 20px;

@@ -55,6 +55,7 @@ $(document).ready(function () {
       $("div.content").removeClass('snake');
       $("div.content").removeClass('works');
       $("div.content").removeClass('home');
+      $("div.content").removeClass('snakeMobile');
       $("div.content").removeClass("links");
       $("div.content").addClass('home');
       $("div.content").html(
@@ -68,6 +69,7 @@ $(document).ready(function () {
       $("div.content").removeClass('snake');
       $("div.content").removeClass('works');
       $("div.content").removeClass('home');
+      $("div.content").removeClass('snakeMobile');
       $("div.content").removeClass("links");
       $("div.content").addClass('about');
       $("div.content").html(
@@ -80,6 +82,7 @@ $(document).ready(function () {
       $("div.content").removeClass('about');
       $("div.content").removeClass('snake');
       $("div.content").removeClass('works');
+      $("div.content").removeClass('snakeMobile');
       $("div.content").removeClass('hem');
       $("div.content").addClass("links");
       $("div.content").html(
@@ -93,6 +96,7 @@ $(document).ready(function () {
       $("div.content").removeClass('snake');
       $("div.content").removeClass('works');
       $("div.content").removeClass('links');
+      $("div.content").removeClass('snakeMobile');
       $("div.content").removeClass('hem');
       $("div.content").addClass("works");
       $("div.content").html(
@@ -105,10 +109,16 @@ $(document).ready(function () {
       $("div.content").removeClass('snake');
       $("div.content").removeClass('works');
       $("div.content").removeClass('links');
+      $("div.content").removeClass('snakeMobile');
       $("div.content").removeClass('hem');
       $("div.content").addClass("snake");
       if (jQuery(window).width() < 900) {
-
+        $("div.content").removeClass('about');
+      $("div.content").removeClass('snake');
+      $("div.content").removeClass('works');
+      $("div.content").removeClass('links');
+      $("div.content").removeClass('snakeMobile');
+      $("div.content").addClass("snakeMobile");
         $("div.content").html(
 
               "<iframe src='https://editor.p5js.org/kennypowers1337/embed/oxRToSjLQ'></iframe>"         
